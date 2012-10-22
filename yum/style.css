@@ -78,12 +78,12 @@ html[xmlns] .clearfix { display: block; }
 header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
-body { background:black; }
+body { background:#fa8072 }
 
 h3 { font-family:sans-serif;
 	font-weight:bold;
 	font-size:30px;
-	color:#ff7f50; 
+	color:#d3d3d3; 
 	
 	margin:30px;}
 	
@@ -91,26 +91,27 @@ h2 { font-family:sans-serif;
 	font-weight:bold;
 	font-size:20px;
 	margin:10px 0px;
-	color:white; }
+	color:#ff7f50; }
 	
-
+#wrap { position:relative; 
+	background-color:black
+	 } 
 	
 img {   position:relative;
 	margin:20px;
 	width:500px; 
 	}
 
-#wrap { position:relative; 
-	margin-top:100px;}
-
 #Ingredients { background-color:gray;
 		font-family:sans-serif;
 		margin:20px;
 		padding:10px;
 		width:500px;
-		left:1000px; }
+		float:right;
+		}
+		
 	
-#Directions { background-color:yellow; 
+#Directions { background-color:#f0e68c; 
 		height:400px; 
 		font-family:sans-serif;
 		margin:20px;
