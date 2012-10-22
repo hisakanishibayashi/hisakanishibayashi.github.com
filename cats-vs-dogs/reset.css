@@ -73,4 +73,51 @@ table {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 
+#logo{ text-align:center;
+margin-left:auto;
+margin-right:auto;
+}
+
+#wrap { position
+margin-left:auto;
+margin-right:auto;}
+
+nav { ont-family:sans-serif; 
+	font-weight:bold;
+	font-size:20pt;
+
+	 border-bottom: solid black; 
+	 border-top: solid black;
+	 border-width: 4px;
+	 
+	 margin-left:auto;
+	 margin-right:auto;
+	text-align:center;
+	     }
+
+h3 { font-family:sans-serif; 
+	font-weight:bold; }
+
+.dog { float:left; width:400px; }
+
+.cat { float:left; width:400px; }
+
+fotter { font-size:8pt;
+	
+	border-top: solid black; 
+	border-width: 4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
