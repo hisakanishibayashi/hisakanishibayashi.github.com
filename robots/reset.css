@@ -31,7 +31,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body {	margin:0 auto;
+	width:1000px;
+	background-color:black;
 	line-height: 1;
 }
 ol, ul {
@@ -62,17 +64,23 @@ table {
 		float:left;
 		width:400px;
 		height:200px;
-		text-indent:-9999px;
-		
-
-	
+		display:block;
+		position:relative; 
 		background:url(images/logo.png) no-repeat top left;  }
+		
+#site-header h1 {	position:absolute;
+			top:20px;l
+			left:20px;
+			background-color:red;}
 
-#top-nav { 	margin-left:800px;
+#top-nav { 	top:20px;
+		right:20px;
 		font-size:10pt;
 		background-color:yellow;
-		float:left;
-		width:200px; }
+		
+		
+		position:absolute;
+ }
 
 #menu-wrapper li {	float:left;
 			
