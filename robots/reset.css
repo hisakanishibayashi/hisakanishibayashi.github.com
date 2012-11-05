@@ -53,15 +53,16 @@ table {
 
 
 
-#site-wrapper { height:70px;
+#site-wrapper { height:200px;
 		background-color:#f0f8ff;
 		position:relative; }
 
 #site-header {	font-size:20pt;
 		font-weight:bold; 
 		float:left;
-		width:200px;
-		background-color:black;
+		width:400px;
+		height:200px;
+		
 	
 		background:url(images/logo.png) no-repeat top left;  }
 
