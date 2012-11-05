@@ -78,14 +78,17 @@ html[xmlns] .clearfix { display: block; }
 header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
-body { background:#fa8072
+body {	background:#fa8072;
 	font-family:Georgia;
-	line-height:1.1em; }
+	line-height:1.1em;
+	width:1200px;}
+	
+
 
 h3 { font-family:sans-serif;
 	font-weight:bold;
 	font-size:30px;
-	color:#d3d3d3; 
+	color:#E0453D; 
 	
 	margin:30px;}
 	
@@ -93,10 +96,12 @@ h2 { font-family:sans-serif;
 	font-weight:bold;
 	font-size:20px;
 	margin:10px 0px;
-	color:#ff7f50; }
+	color:#f0e68c; }
 	
 #wrap { position:relative; 
-	background-color:black
+	background-color:white;
+	height:1000px;
+	
 	 } 
 	
 img {   position:relative;
@@ -104,10 +109,10 @@ img {   position:relative;
 	width:500px; 
 	}
 
-#Ingredients { background-color:gray;
+#Ingredients { background-color:#99A95B;
 		font-family:sans-serif;
 		margin:20px;
-		padding:10px;
+		padding:10px 50px;
 		width:500px;
 		float:right;
 		line-height:1.1em;
