@@ -1,0 +1,101 @@
+margin:0; padding:0;
+
+
+
+
+var mediaList = {};
+$("#player audio source").each(function() {
+	var src = $(this).attr("src");
+	var m;
+	if (m = src.match(/\.(\w+)$/)) {
+		var ext = m[1];
+		mediaList[ext] = src;
+	}
+});
+
+
+
+$("#player audio").remove();
+
+
+
+
+$("#player").append(
+	'<div id="jp-interface">...</div>'
+);
+
+
+
+options = {
+	...
+	cssSelectorAncestor: "#jp_interface_1",
+	cssSelector: {
+		videoPlay: ".jp-video-play",
+		play: ".jp-play",
+		pause: ".jp-pause",
+		stop: ".jp-stop",
+		seekBar: ".jp-seek-bar",
+		playBar: ".jp-play-bar",
+		mute: ".jp-mute",
+		unmute: ".jp-unmute",
+		volumeBar: ".jp-volume-bar",
+		volumeBarValue: ".jp-volume-bar-value",
+		currentTime: ".jp-current-time",
+		duration: ".jp-duration"
+	},
+	...
+}
+
+
+$("#player").append(
+	$('<div id="jplayer" class="jp-jplayer">').jPlayer({
+		swfPath: "/common",
+		cssSelectorAncestor: "#jp-interface",
+		ready: function() {
+			$(this).jPlayer("setMedia", mediaList);
+		},
+	})
+);
+
+
+/*---music player end here---*/
+
+width:100%;
+position:relative;
+
+p{	color:white;
+	text-aligin:center;}
+
+body{	width:700px;
+	height:400px;
+	color:#808080; }
+	
+#player{margin:50px auto;
+	float:left;}
+	
+h1{	font-family:sans-serif;
+	font-weight:bold;
+	font-size:70px;
+	color:#ffff00;
+	text-aligin:center;
+ }
+ 
+ #box{	margin:100px;
+ 	width:80%;
+ 	height:400px;
+	padding:10px;
+	
+	background:#3399FF;
+	position:absolute;
+	top:100px;
+	
+	}
+
+
+
+
+
+
+
+
+

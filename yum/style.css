@@ -78,7 +78,9 @@ html[xmlns] .clearfix { display: block; }
 header#site-header h1 { position:absolute; left:10px; top:10px; }
 header#site-header h1 a { display:block; width:200px; height:200px; background:url(images/logo.png) top center no-repeat; text-indent:-9999px; }
 
-body { background:#fa8072 }
+body { background:#fa8072
+	font-family:Georgia;
+	line-height:1.1em; }
 
 h3 { font-family:sans-serif;
 	font-weight:bold;
@@ -108,6 +110,7 @@ img {   position:relative;
 		padding:10px;
 		width:500px;
 		float:right;
+		line-height:1.1em;
 		}
 		
 	
@@ -115,7 +118,8 @@ img {   position:relative;
 		height:400px; 
 		font-family:sans-serif;
 		margin:20px;
-		padding:10px;}
+		padding:10px;
+		line-height:1.5em;}
 		
 		
 

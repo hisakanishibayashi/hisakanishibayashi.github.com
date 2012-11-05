@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HAPPYBIRTHDAY</title>
+	<link rel="stylesheet" href="birthday.css" type="text/css" media="screen" />
+</head>
+
+
+<body>
+
+<div id="box">
+<h1>HAPPY<br>BIRTHDAY</h1>
+
+<p>testestestestestestestestestestestestestestestestestestestes<br>
+testestestestestestestestestestestestestestestestestestestes<br>
+testestestestestestestestestes</p>
+
+</div>
+
+<div id="player"></div>
+
+
+
+<SCRIPT Language="JavaScript">
+
+$(function() {
+	$("#player").jPlayer({
+		swfPath: "jQuery.jPlayer.2.2.0/Jplayer.swf",
+		ready: function() {
+			$(this).jPlayer("setMedia", {
+				mp3: "01 Birthday.mp3",
+				 oga: './media/audio/Q701.ogg'
+			}).jPlayer("play");
+		}
+	});
+});
+
+
+
+
+
+
+</script>
+
+
+
+<div id="player">
+	<audio controls>
+		<source src="01 Birthday.mp3" type="audio/mpeg">
+		<source src="music.oga" type="audio/ogg">
+		<a href="01 Birthday.mp3" rel="audio">‚±‚Ì‹È‚ğÄ¶</a>
+	</audio>
+</div>
+
+
+
+
+
+
+</body>
