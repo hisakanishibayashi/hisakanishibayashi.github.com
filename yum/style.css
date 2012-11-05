@@ -84,13 +84,14 @@ body {	background:#fa8072;
 	width:1200px;}
 	
 
-
-h3 { font-family:sans-serif;
+h3 {	font-family:sans-serif;
 	font-weight:bold;
 	font-size:30px;
 	color:#E0453D; 
 	
-	margin:30px;}
+	text-aligin:center;
+	margin:40px;
+	padding:10px;}
 	
 h2 { font-family:sans-serif;
 	font-weight:bold;
@@ -100,7 +101,7 @@ h2 { font-family:sans-serif;
 	
 #wrap { position:relative; 
 	background-color:white;
-	height:1000px;
+	margin: 0 auto;
 	
 	 } 
 	
