@@ -62,7 +62,9 @@ table {
 		float:left;
 		width:400px;
 		height:200px;
+		text-indent:-9999px;
 		
+
 	
 		background:url(images/logo.png) no-repeat top left;  }
 
