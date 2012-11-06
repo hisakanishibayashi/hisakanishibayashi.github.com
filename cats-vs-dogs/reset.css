@@ -59,23 +59,27 @@ table {
 }
 
 
-/* Clearfix */
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
- 
-.clearfix { display: inline-block; }
-html[xmlns] .clearfix { display: block; }
-* html .clearfix { height: 1%; }
+
 
 
 body { margin:0 auto;
 	width 960px; }
+	
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
 
 #logo{ text-align:center;
 margin-left:auto;
@@ -102,16 +106,15 @@ nav { font-family:sans-serif;
 	 text-align:center;
 	     }
 
-h3 { font-family:sans-serif; 
-	font-weight:bold; }
+h3 { 
+	font-weight:bold; 
+	font-family: 'LeagueGothicRegular';}
 	
 img { margin: 20px 0px; }
 
 .dog { float:left; 
 	width:400px;
 	margin:30px; 
-	
-
 	}
 
 .cat { float:left; 
@@ -121,6 +124,14 @@ img { margin: 20px 0px; }
 
 	}
 
+
+
+
+
+
+
+
+
 footer { font-size:10pt;
 	position:absolute;
 	margin:600px;
@@ -129,8 +140,15 @@ footer { font-size:10pt;
 	border-top: solid black; 
 	border-width: 4px;}
 
-
-
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
 
 
 

@@ -55,7 +55,9 @@ body {	width:100%;
 
 #site-header  { height:200px;
 		background-color:#f0f8ff;
-		position:relative; }
+		position:relative;
+		width:1000px;
+		margin: 0 auto; }
 		
 #site-wrapper {background-color:green;}
 
@@ -94,11 +96,12 @@ body {	width:100%;
 		
 #mein-menu {	}	
 
-#content-wrapper {	margin:100px 20px;
+#content {		margin:0 auto;
 			background-color:#b0c4de;
 			padding:10px;
-			height:600px;
 			 }
+			 
+*//--use content instead of content-wrapper--//
 
 article h1 {	font-size:20pt;
 		font-weight:bold;
@@ -124,15 +127,17 @@ h2 {	font-size:15pt;
 		margin:5px; }
 
 #footer-wrapper {	height:300px;
-			background-color:gray; }
+			background-color:gray;
+			clear:both; }
 
 #footer-wrapper h1 {	font-size:18px;
 			font-weight:bold;
-			margin:10px 0px; }
+			margin:10px 0px;
+			 }
 
 #footer-contact {	float:left;
 			
-			clear:both;
+			
 			
 			width:200px;
 			background-color:white;
