@@ -81,10 +81,12 @@ header#site-header h1 a { display:block; width:200px; height:200px; background:u
 body {	background:#fa8072;
 	font-family:Georgia;
 	line-height:1.1em;
-	width:1200px;}
+	width:100%;}
 	
 
-h3 {	font-family:sans-serif;
+h3 {	/* World's Best Lasagna */
+
+	font-family:sans-serif;
 	font-weight:bold;
 	font-size:30px;
 	color:#E0453D; 
@@ -102,10 +104,11 @@ h2 { font-family:sans-serif;
 #wrap { position:relative; 
 	background-color:white;
 	margin: 0 auto;
+	width:1200px;
 	
 	 } 
 	
-img {   position:relative;
+img {   float:left;
 	margin:20px;
 	width:500px; 
 	}
@@ -121,7 +124,7 @@ img {   position:relative;
 		
 	
 #Directions { background-color:#f0e68c; 
-		height:400px; 
+		clear:both;
 		font-family:sans-serif;
 		margin:20px;
 		padding:10px;

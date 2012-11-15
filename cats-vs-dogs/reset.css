@@ -63,7 +63,7 @@ table {
 
 
 body { margin:0 auto;
-	width 960px; }
+	width:960px; }
 	
 @font-face {
     font-family: 'LeagueGothicRegular';
@@ -87,11 +87,7 @@ margin-right:auto;
 margin:20px;
 }
 
-#wrap { position:relative;
-margin-left:auto;
-margin-right:auto;
 
-}
 
 nav { font-family:sans-serif; 
 	font-weight:bold;
@@ -133,9 +129,8 @@ img { margin: 20px 0px; }
 
 
 footer { font-size:10pt;
-	position:absolute;
-	margin:600px;
-	width:900px;
+	clear:both;
+	
 	
 	border-top: solid black; 
 	border-width: 4px;}
