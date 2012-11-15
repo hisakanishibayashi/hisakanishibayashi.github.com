@@ -50,7 +50,7 @@ table {
 
 
 body {	width:100%;
-	background-color:black;
+	background-color:gray;
 	line-height: 1;
 }
 
@@ -100,12 +100,12 @@ body {	width:100%;
 			margin:0 auto; }	
 
 #content {		margin:0 auto;
-			background-color:#black;
+			
 			padding:50px;
 			width:1200px; }
 			 
 #content-wrapper {	margin: 0 auto;
-			background-color:#gray;
+			
 			}
 
 *//--use content instead of content-wrapper--//
