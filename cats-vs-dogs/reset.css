@@ -174,6 +174,16 @@ footer { font-size:10pt;
 .copyright {float:right;
 	 }
 	 
+
+@media only screen and (max-width:700px) {
+    #nav { float:none; width:98%; margin:0 1%; }
+    img {max-width:80%;}
+    #DOG   {font-size:6em;}
+    #CATS  {font-size:6em;}
+    #VS    {font-size:4em;}
+    body{font-size:1em;}
+  }	 
+	 
 	 
 	 
 @media only screen and (max-width:500px) and (min-width:400px) {
@@ -185,7 +195,6 @@ footer { font-size:10pt;
     #CATS  {font-size:5em;}
     #VS    {font-size:3em;}
     body{font-size:1em;}
-
   }	 
 	 
 	 
