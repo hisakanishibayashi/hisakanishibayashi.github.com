@@ -180,7 +180,7 @@ footer { font-size:10pt;
     #nav { float:none; width:98%; margin:0 1%; }
    
     img {max-width:80%;
-    	min-width:60%;}
+    	}
     #DOG   {font-size:5em;}
     #CATS  {font-size:5em;}
     #VS    {font-size:3em;}
