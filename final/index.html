@@ -1,9 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-
+	  <meta charset="utf-8" />
+	  <!-- for iphone -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	  <title>Hisaka Nishibayashi</title>
+	  <link rel="stylesheet" href="style.css" type="text/css"> 
+	  <!-- jQuery -->
+	  <script type="text/javascript" async src="http://www.google-analytics.com/ga.js"></script>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	  <!-- portfoliojs (unified with all dependencies) -->
+	  <script src="js/portfolio.pack.min.js"></script>
+	  <script>
+    $(document).ready(function() {
+            var p = $("#gallery").portfolio();
+            p.init();
+    });
+</script>
   </head>
+  
   <body>
+  <h1>Portfoliojs サンプル</h1>
+  
+  <!--move to left -->
+  <span class="gallery-allow-left" style="position: absolute; left: 8px; height: 500px; width: 50px; z-index: 9999; background-image: url(/sample/sampleimages/sample1.jpg); opacity: 0.5; display: none; background-position: 8px 50%; background-repeat: no-repeat no-repeat;"></span>
+  
+  <div id="gallery" style="width: 100%; max-height: 500px; overflow-x: scroll; overflow-y: hidden; white-space: nowrap;">
+	<img data-src="/sample/sampleimages/sample1.jpg" />
+	<img data-src="images/img02.jpg" />
+	<img data-src="images/img03.jpg" />
+	<img data-src="images/img04.jpg" />
+	<img data-src="images/img05.jpg" />
+</div>
+<!--move to right -->
+		<span class="gallery-allow-right" style="position: absolute; right: 0px; top: 409.3999938964844px; height: 500px; width: 50px; z-index: 9999; background-image:url(/sample/sampleimages/sample1.jpg); opacity: 0.5; display: none; background-position: 8px 50%; background-repeat: no-repeat no-repeat;"></span>
+  
+	<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25503659-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+	</script>
 
-  </body>
+
+
+</body>
+  
 </html>
