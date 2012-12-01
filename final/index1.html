@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Hisaka Nishibayashi</title>
+<link rel="stylesheet" href="style1.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	//コンテンツの横サイズ
+	var cont = $('#contents');
+	var contW = $('.section').outerWidth(true) * $('div',cont ).length;
+	cont.css('width', contW);
+	//スクロールスピード
+	var speed = 50;
+	//マウスホイールで横移動
+	$('html').mousewheel(function(event, mov) {
+		//IE
+		$(this).scrollLeft($(this).scrollLeft() - mov * speed);
+		//webkit
+		$('body').scrollLeft($('body').scrollLeft() - mov * speed);
+
+		return false;	//縦スクロール不可
+    });
+	$('#nav a').click(function(event) {
+		var $anchor = $(this);
+		$('html, body').stop().animate({
+			scrollLeft: $($anchor.attr('href')).offset().left
+		}, 500);
+		event.preventDefault();
+	});
+});
+
+</script>
+
+</head>
+<body>
+<h1><img src="logo.png"/></h1>
+<div id="contents">
+	<ul id="nav">
+		<li><a href="#s01">01</a></li>
+		<li><a href="#s02">02</a></li>
+		<li><a href="#s03">03</a></li>
+		<li><a href="#s04">04</a></li>
+		<li><a href="#s05">05</a></li>
+	</ul>
+	<div id="s01" class="section">
+		<h2>SECTION 01</h2>
+		<p>1つ目のコンテンツ</p>
+		<img src="sample/images/sample1.jpg" alt="blah">
+	</div>
+	<div id="s02" class="section">
+		<h2>SECTION 02</h2>
+		<p>2つ目のコンテンツ</p>
+	</div>
+	<div id="s03" class="section">
+		<h2>SECTION 03</h2>
+		<p>3つ目のコンテンツ</p>
+	</div>
+	<div id="s04" class="section">
+		<h2>SECTION 04</h2>
+		<p>4つ目のコンテンツ</p>
+	</div>
+	<div id="s05" class="section">
+		<h2>SECTION 05</h2>
+		<p>5つ目のコンテンツ</p>
+	</div>
+<!-- /#contents --></div>
+
+
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17282751-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

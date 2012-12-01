@@ -28,7 +28,7 @@
         enableKeyboardNavigation: true,
         loop: false,
         easingMethod: 'easeOutQuint',
-        height: '500px',
+        height: '400px',
         width: '100%',
         lightbox: false,
         showArrows: true,

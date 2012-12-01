@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body,div,pre,p,blockquote, 
+form,
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6, 
+embed,object { 
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline; 
+	font-size: 100.01%;
+	
+
+@media screen and (max-width:1100px) {
+    body {;}
+  }
+
+	
+}
+body {
+	background: gray;
+	color: red;
+	font: .5em/1.231 Arial, Helvetica, sans-serif;
+	*font-size:small;
+	*font:x-small;
+}
+h1 {
+	font-size: 130%;
+	line-height: 1.3;
+	padding: 10px;
+}
+h1 a {
+	color: #fff;
+
+}
+h1 a:hover {
+	text-decoration: none;
+}
+h2 {
+	font-size: 182%;
+}
+
+#contents {
+	overflow: hidden;
+	padding: 60px;
+	height: 100%;
+}
+div.section {
+	width: 700px;
+	background: #FFFFFF;
+	padding: 20px;
+	height: 800px;
+	float: left;
+	margin-right: 20px;
+}
+#nav {
+	list-style: none;
+	margin-bottom: 10px;
+	position: fixed;
+	left: 60px;
+	top: 60px;
+}
+#nav li {
+	display: inline;
+	margin-right: 0.5em;
+}
+#nav li a {
+	color: #fff;
+}
+
+
+h1 img {
+	width:10%;
+}
+
+#s01 img {	
+	width:90%;
+	margin:0 auto;
+}
+

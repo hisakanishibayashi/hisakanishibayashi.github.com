@@ -1,13 +1,21 @@
 @charset "UTF-8";
 /* CSS Document */
 
-h1 {
-	font-size: 20px;
-	color: #666;
-	margin-bottom: 10px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #666;
+
+body {
+	height:1000px;
 }
+
+
+#headder-wrapper {
+	height:80px; 
+}
+
+#headder {
+	height:10%;
+}
+
+
 #back {
 	font-size: 13px;
 	margin-bottom: 30px;
@@ -18,4 +26,5 @@ h1 {
 }
 #gallery img {
 	border-radius: 10px;
+	
 }
