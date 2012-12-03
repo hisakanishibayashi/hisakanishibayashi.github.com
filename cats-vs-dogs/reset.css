@@ -85,7 +85,7 @@ header { position:relative;
 #DOG{ 	text-align:center;
 	font-family:'LeagueGothicRegular';
 	font-size:10em;
-	margin-left:15%;
+	margin-left:10%;
 	float:left;
 	
 	
@@ -105,9 +105,8 @@ header { position:relative;
  }
 
 #CATS{ 	text-align:center;
-	margin-left:auto;
-	margin-right:auto;
-	
+	margin-left:10%;
+	margin-right:100%;
 	font-family:'LeagueGothicRegular';
 	font-size:10em;
 	

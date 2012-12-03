@@ -1,0 +1,31 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+body,div,pre,p,blockquote, 
+form,
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6, 
+embed,object { 
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline; 
+	font-size: 100.01%;
+	
+
+body{	background-color:gray;
+	margin:0 auto;
+	font-family:sans-serif;}
+
+
+h1 img {
+	width:10%;
+	position:absolute
+	margin:30px;
+}
+#nav {
+	list-style: none;
+	text-decoration:none
+	color:black;
+	
+}

@@ -37,44 +37,33 @@ $(function() {
 	});
 });
 
-</script>
 
-	<ul id="nav">
-		<li><a href="works">works</a></li>
-		<li><a href="profile">profile</a></li>
-	</ul>
-
-
-<SCRIPT language="JavaScript">
 <!--
+
 num = 3; // number of images
 nme = "sample/images/sample" // adress
 exp = "jpg" // 
 cnt = 0;
 function changeImage() {
-  cnt++;
-  cnt %= num;
-  document.img.src = nme + cnt + "." + exp;
-}
-//-->
-</SCRIPT>
 
-<SCRIPT language="JavaScript">
-<!--
-num = 3; // number of images
-nme = "sample/images/sample" // adress
-exp = "jpg" // 
-cnt = 0;
-function changeImage2() {
   cnt++;
   cnt %= num;
   document.img.src = nme + cnt + "." + exp;
 }
 //-->
+
+
 </SCRIPT>
 
 </head>
 <body>
+
+	<ul id="nav">
+		<li><a href="works">works</a></li>
+		<li><a href="profile">profile</a></li>
+	</ul>
+	
+	
 <h1><img src="logo.png"/>
 
 </h1>
@@ -94,8 +83,7 @@ function changeImage2() {
 	<div id="s02" class="section">
 		<h2>SECTION 02</h2>
 		<p>2つ目のコンテンツ</p>
-		<A href="JavaScript:changeImage2()">
-		<IMG src="sample/images/sample2.jpg" name="img" border="0"></A>
+		<img src="sample/images/sample2.jpg" alt="blah">
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
