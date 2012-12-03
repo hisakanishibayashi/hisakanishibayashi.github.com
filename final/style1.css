@@ -18,7 +18,8 @@ embed,object {
 
 	
 }
-body {
+body {  margin:0 auto;
+	height:90%;
 	background: gray;
 	color: red;
 	font: .5em/1.231 Arial, Helvetica, sans-serif;
