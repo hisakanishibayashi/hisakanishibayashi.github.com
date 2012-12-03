@@ -59,20 +59,25 @@ div.section {
 	list-style: none;
 	margin-bottom: 10px;
 	position: fixed;
-	left: 60px;
+	left: 2300px;
 	top: 60px;
 }
 #nav li {
 	display: inline;
 	margin-right: 0.5em;
+	
+	
 }
 #nav li a {
 	color: #fff;
+	
 }
 
 
 h1 img {
 	width:10%;
+	position:absolute
+	margin:30px;
 }
 
 #s01 img {	
