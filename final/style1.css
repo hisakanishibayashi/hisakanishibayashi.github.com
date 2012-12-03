@@ -59,7 +59,7 @@ div.section {
 	list-style: none;
 	margin-bottom: 10px;
 	position: fixed;
-	left: 2300px;
+	right:10px;
 	top: 60px;
 }
 #nav li {

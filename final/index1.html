@@ -47,13 +47,25 @@ $(function() {
 
 <SCRIPT language="JavaScript">
 <!--
-// 画像がクリックされたら画像を入れ替える
-// img0.jpg,img1.jpgなどの数字が続いたファイルを複数用意します。
-num = 3; // 入れ替える画像の枚数(最初の画像も含める)
-nme = "sample/images/sample" // 画像のディレクトリとファイル名の数字と拡張子より前の部分
-exp = "jpg" // 拡張子
+num = 3; // number of images
+nme = "sample/images/sample" // adress
+exp = "jpg" // 
 cnt = 0;
 function changeImage() {
+  cnt++;
+  cnt %= num;
+  document.img.src = nme + cnt + "." + exp;
+}
+//-->
+</SCRIPT>
+
+<SCRIPT language="JavaScript">
+<!--
+num = 3; // number of images
+nme = "sample/images/sample" // adress
+exp = "jpg" // 
+cnt = 0;
+function changeImage2() {
   cnt++;
   cnt %= num;
   document.img.src = nme + cnt + "." + exp;
@@ -82,8 +94,8 @@ function changeImage() {
 	<div id="s02" class="section">
 		<h2>SECTION 02</h2>
 		<p>2つ目のコンテンツ</p>
-
-		<img src="sample/images/sample2.jpg" alt="blah">
+		<A href="JavaScript:changeImage2()">
+		<IMG src="sample/images/sample2.jpg" name="img" border="0"></A>
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
@@ -103,7 +115,7 @@ function changeImage() {
 	<div id="s04" class="section">
 		<h2>SECTION 04</h2>
 		<p>4つ目のコンテンツ</p>
-		<img src="sample/images/sample4.jpg" alt="blah">
+		<img src="sample/images/sample5.jpg" alt="blah">
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
