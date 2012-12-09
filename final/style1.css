@@ -54,6 +54,7 @@ div.section {
 	height: 800px;
 	float: left;
 	margin-right: 20px;
+	color:#ccc;
 }
 #nav {
 	list-style: none;
