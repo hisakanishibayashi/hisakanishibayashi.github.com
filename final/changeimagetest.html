@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+ Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<title>Hisaka Nishibayashi</title>
+<link rel="stylesheet" href="style1.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+<script type="text/javascript">
+$(function() {
+
+<script>
+
+function changeImage (element) {
+    var n,
+        imageData = [
+            [
+                {
+                    src: "http://thechive.files.wordpress.com/2011/10/william-defoe.jpg",
+                    caption: "Caption for image 1.1"
+                },
+                {
+                    src: "http://cdn.memegenerator.net/images/300x/159304.jpg",
+                    caption: "Caption for image 1.2"
+                }
+            ],
+            [
+                {
+                    src: "http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2008/10/31/1225454147507/Mike-Tyson-001.jpg",
+                    caption: "Caption for image 2.1"
+                },
+                {
+                    src: "http://playerperspective.com/wp-content/uploads/2011/05/mike-tyson-3.jpg",
+                    caption: "Caption for image 2.2"
+                }
+            ],
+            [
+                {
+                    src: "http://cdn.slashgear.com/wp-content/uploads/2012/04/halo-master-chief-1.jpg",
+                    caption: "Caption for image 3.1"
+                },
+                {
+                    src: "http://static.guim.co.uk/sys-images/Technology/Pix/pictures/2012/3/5/1330958259135/Halo-4-007.jpg",
+                    caption: "Caption for image 3.2"
+                }
+            ]
+        ];
+    if (element > -1) {
+        document.getElementById('image' + element).src = imageData[element][1].src;
+        document.getElementById('caption' + element).innerHTML = imageData[element][1].caption;
+    } else {
+        for (n = 0; n < imageData.length; n++) {
+            document.getElementById('image' + n).src = imageData[n][0].src;
+            document.getElementById('caption' + n).innerHTML = imageData[n][0].caption;
+        }
+    }
+    return;
+}
+
+</script>
+
+</head>
+
+
+
+
+<body>
+    <button onclick="changeImage(-1);" >Click to restore all!</button>
+    <div>
+        <h1 id="caption0">Caption for image 1.1</h1>
+        <button onclick="changeImage(0);">Click to change!</button>
+        <img id="image0" src="http://thechive.files.wordpress.com/2011/10/william-defoe.jpg" />
+    <div>
+        <h1 id="caption1">Caption for image 2.1</h1>
+        <button onclick="changeImage(1);">Click to change!</button>
+        <img id="image1" src="http://static.guim.co.uk/sys-images/Sport/Pix/pictures/2008/10/31/1225454147507/Mike-Tyson-001.jpg" />
+    </div>
+    <div>
+        <h1 id="caption2">Caption for image 3.1</h1>
+        <button onclick="changeImage(2);">Click to change!</button>
+        <img id="image2" src="http://cdn.slashgear.com/wp-content/uploads/2012/04/halo-master-chief-1.jpg" />
+    </div>
+</body>
+
+</html>
