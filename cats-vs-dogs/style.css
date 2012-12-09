@@ -1,0 +1,226 @@
+
+
+/* Meyer Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Center Content */
+
+.centered { 
+  margin:0 auto;
+  width:960px;
+}
+
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+/* STYLE BEGINS HERE */
+
+@font-face {
+    font-family: LeagueGothic;
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	max-width:933px;
+	margin:0 auto;
+	font-family:georgia,serif;
+}
+
+img {max-width:100%; padding-bottom:10px;}
+
+.title {display:inline;}
+
+header {
+	float:left;
+	width:82%;
+}
+
+header .vs {
+	border-top:solid #cccccc 1px;
+	border-bottom:solid #cccccc 1px;
+	font-family:georgia, serif;
+	font-size:3em;
+	font-style:italic;
+	margin:4% 2% 0% 2%;
+	font-weight:bold;
+	padding:2px 0px;
+	color:#cccccc;
+}
+
+.vs div {
+	overflow:hidden;
+	border-top:solid #cccccc 2px;
+	border-bottom:solid #cccccc 2px;
+}
+
+#woof {margin-left:24%}
+
+header h1 {
+	font-family:LeagueGothic;
+	font-size:7em;
+	float:left;
+}
+
+header ul {
+	clear:left;
+	overflow:auto;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+
+header li {
+	float:left;
+	padding:0px 4px;
+	margin:3px 30px;
+	font-weight:bold;
+	font-size:1.25em;
+	list-style:disc;
+}
+
+header li:first-child {
+	list-style:none;
+}
+
+section {
+	margin-left:5%
+}
+
+section h1 {
+	font-family:georgia, serif;
+	font-size:1.3em;
+	font-weight:bold;
+}
+
+p {
+	line-height:1.2em;
+	font-size:.9em;
+}
+
+#dogs {
+	width:40%;
+	margin:5px;
+	float:left;
+}
+
+#cats {
+	float:left;
+	width:40%;
+	margin:5px;
+	
+}
+
+footer {
+	clear:both;
+	border-top:solid black 3px;
+	width:82%;
+}
+
+footer p {
+	padding-top:5px;
+	font-size:.65em;
+	display:inline;
+}
+
+.foot-col2 {
+	margin-left:60%;
+}
+
+footer a {
+	text-decoration:none;
+	color:#da2464;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:929px) {
+	header li {
+	float:left;
+	padding:0px 4px;
+	margin:3px 30px;
+	font-weight:bold;
+	font-size:1em;
+	list-style:disc;
+}
+
+}
+
+@media screen and (max-width:824px) {
+	header li {
+	float:left;
+	padding:0px 4px;
+	margin:3px 30px;
+	font-weight:bold;
+	font-size:1em;
+	display:none;
+}
+
+header ul {border:none;}
+
+#woof {margin-left:6.5%;}
+}

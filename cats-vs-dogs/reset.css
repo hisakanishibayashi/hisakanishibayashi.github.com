@@ -53,17 +53,11 @@ table {
 
 /* Center Content */
 
-.centered { 
+body{ 
   margin:0 auto;
-  width:960px;
-}
+  width:960px;　}
 
 
-
-
-
-body { margin:0 auto;
-	width:90%; }
 	
 @font-face {
     font-family: 'LeagueGothicRegular';
@@ -74,113 +68,100 @@ body { margin:0 auto;
          url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 
+header { position:relative; 　　　　　　　　　
+	 height:100px; }   　　　　　　　　　　　　　
 
-header { position:relative;
-	 height:220%; }
+#DOG{ 	text-align:center; 　　　　　　　　　
+	font-family:'LeagueGothicRegular';　
+	font-size:10em;　
+	margin-left:10%;　
+	float:left;　}　　　
 
-#DOG{ 	text-align:center;
-	font-family:'LeagueGothicRegular';
-	font-size:10em;
-	margin-left:10%;
-	float:left;
-	
-	
-}
+#VS{ 	border-bottom: solid #ccc 1px;　　 　　
+	border-top: solid #ccc 1px;　　　　
+	text-align:center;　　　　　　
+	margin:4%;　　　　　
+	font-family:Georgia, serif;　
+	font-size:4em;　
+	font-style:italic;
+	font-weight:bold;　
+	float:left; }　
 
-#VS{ 	border-bottom: solid black; 
-	border-top: solid black;
+#CATS{ 	text-align:center;　　　　　　　　　　　
+	margin-left:10%;　　　　　　       
+	margin-right:100%;　
+	font-family:'LeagueGothicRegular';　
+	font-size:10em;	}　
 
-	text-align:center;
-	
-	margin:4%;
-	font-family: Georgia, serif;
-	font-size:4em;
-	font-weight:bold;
-	
-	float:left;
- }
-
-#CATS{ 	text-align:center;
-	margin-left:10%;
-	margin-right:100%;
-	font-family:'LeagueGothicRegular';
-	font-size:10em;
-	
-}
-
-
-
-
-
-nav { 	clear:left;
-
+nav{ 	clear:left;　
 	position:absolute;
 	font-family:sans-serif; 
 	font-weight:bold;
 	font-size:1.5em;
-
-	 margin-left:auto;
-	 margin-right:auto;
-	 text-align:center;
-	     }
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center; }
 	    
-ul {	border-bottom: solid black; 
+ul{	 border-bottom: solid black; 
 	 border-top: solid black;
 	 border-width:0.1em; 
-	 height:2em;
-	}	    
+	 height:2em; }	    
 	    
 li {	float:left;
-	
 	list-style:disc; 
 	margin-left: 80px;
 	margin-top: 3%; 
-	list-style: disc;}
+	list-style: disc; }
 	
 li:first-child {list-style:none; }    
 
-h3 { 	font-size:2em;
+h3 { 	font-size:2em;  
 	font-weight:bold; 
-	font-family: 'LeagueGothicRegular';}
+	font-family: 'LeagueGothicRegular'; }
 	
-img {	margin: 20% 0%;
-	max-width:100% }
+img {	margin: 20% 0%; 
+	max-width:100%; }
 
 .dog { float:left; 
-	width:50%;
-	marigin:2%; 
-	}
+	width:50%; 
+	marigin:2%; }
 
-.cat { float:left; 
-	width:50%;
-	marigin:2%; 
-	}
+.cat { float:left;  
+	width:50%; 
+	marigin:2%; }
 
 footer { font-size:10pt;
-	clear:left;
-	
-	border-top: solid black; 
-	border-width: 4px;
-	 }
+	 clear:left;   
+	 border-top: solid black; 
+	 border-width:4px; }   
 
-.wiki{	float:left;
-	 }
+.wiki{	float:left; }
+
+.red {	color:red; 
+	float:right;}
 	
-.copyright {float:right;
-	 }
-	 
+.copyright {float:right; }
+
+.fotter-contact {
+	float: left;
+	width: 150px;
+	background-color: saddleBrown;
+	margin: 10px 200px;
+	color: white;
+	left: 300px;
+}
+
 
 @media only screen and (max-width:700px) {
-    #nav { float:none; width:98%; margin:0 1%; }
-    img {max-width:80%;}
+    #nav   {float:none; width:98%; margin:0 1%; }
+    img    {max-width:80%;}
     #DOG   {font-size:6em;}
     #CATS  {font-size:6em;}
     #VS    {font-size:4em;}
-    body{font-size:1em;}
+    body   {font-size:1em;}
   }	 
 	 
 	 
@@ -188,16 +169,13 @@ footer { font-size:10pt;
 @media only screen and (max-width:500px) and (min-width:400px) {
     #nav { float:none; width:98%; margin:0 1%; }
    
-    img {max-width:80%;
-    	}
+    img    {max-width:80%;}
     #DOG   {font-size:5em;}
     #CATS  {font-size:5em;}
     #VS    {font-size:3em;}
-    body{font-size:1em;}
+    body   {font-size:1em;}
   }	 
-	 
-	 
-	 
+	 	 
 
 /* Clearfix */
 .clearfix:after {
@@ -208,15 +186,5 @@ footer { font-size:10pt;
 	line-height: 0;
 	height: 0;
 }
-
-
-
-
-
-
-
-
-
-
 
 
