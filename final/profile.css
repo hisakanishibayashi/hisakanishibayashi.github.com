@@ -28,12 +28,6 @@ body {  margin:0 auto;
 	color:#ccc;
 }
 
-	
-h1 img {
-	width:20%;
-	position:absolute;
-	margin:10px;
-}
 
 #nav {	
 	list-style: none;
@@ -55,10 +49,24 @@ h1 img {
 	
 }
 
+h1 img {
+	width:15%;
+	position:absolute;
+	margin:10px;
+	
+}
+
+header {
+	height:40px;
+	position:relative;
+	}
+
 
 #contents {
+	margin:120px 20px;
 	padding: 60px;
 	height: 100%;
+	color:#ccc;
 }
 
 
