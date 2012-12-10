@@ -114,7 +114,7 @@ h1 img {
 @media screen and (max-height:768px) {
 body {	height:600px;}
 h1 img {
-    	width:10%;
+    	width:8%;
 	position:absolute
 	margin:10px;}
 div.section {
