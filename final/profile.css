@@ -10,22 +10,57 @@ embed,object {
 	margin: 0;
 	padding: 0;
 	vertical-align: baseline; 
-	font-size: 100.01%;
+	font-size:100.01%;}
 	
 
-body{	background-color:gray;
-	margin:0 auto;
-	font-family:sans-serif;}
+@media screen and (max-width:1100px) {
+    body {;}
+  }
 
+	
+}
+body {  margin:0 auto;
+	height:90%;
+	background-color;#f5f5f5
+	font: .5em/1.231 Arial, Helvetica, sans-serif;
+	*font-size:small;
+	*font:x-small;
+	color:#ccc;
+}
 
+	
 h1 img {
-	width:10%;
-	position:absolute
-	margin:30px;
+	width:20%;
+	position:absolute;
+	margin:10px;
 }
-#nav {
+
+#nav {	
 	list-style: none;
-	text-decoration:none
-	color:black;
+	margin-bottom: 10px;
+	position: fixed;
+	right:10px;
+	top: 60px;
+}
+
+
+#nav li {
+	display: inline;
+	margin-right: 0.5em;
+	
 	
 }
+#nav li a {
+	color: #ccc;
+	
+}
+
+
+#contents {
+	padding: 60px;
+	height: 100%;
+}
+
+
+
+

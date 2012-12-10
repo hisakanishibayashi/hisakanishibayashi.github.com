@@ -10,16 +10,12 @@ embed,object {
 	padding: 0;
 	vertical-align: baseline; 
 	font-size: 100.01%;
-	
 
-@media screen and (max-width:1100px) {
-    body {;}
-  }
 
 	
 }
 body {  margin:0 auto;
-	height:90%;
+	height:50%;
 	background: gray;
 	color: red;
 	font: .5em/1.231 Arial, Helvetica, sans-serif;
@@ -112,6 +108,25 @@ h1 img {
 }
 
 
+
+@media screen and (max-height:768px) {
+body {	height:600px;}
+h1 img {
+    	width:10%;
+	position:absolute
+	margin:10px;}
+div.section {
+	background: #FFFFFF;
+	padding: 0px;
+	height: 700px;
+	float: left;
+	margin-right: 10px;
+	color:#ccc;
+	width:auto;}
+contents img {
+	width:70%;
+	
+    }
 
 
 
