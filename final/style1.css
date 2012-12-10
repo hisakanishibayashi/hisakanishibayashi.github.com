@@ -48,21 +48,23 @@ h2 {
 	height: 100%;
 }
 div.section {
-	width: 700px;
 	background: #FFFFFF;
 	padding: 0px;
 	height: 800px;
 	float: left;
 	margin-right: 20px;
 	color:#ccc;
+	width:auto;
 }
-#nav {
+#nav {	
 	list-style: none;
 	margin-bottom: 10px;
 	position: fixed;
 	right:10px;
 	top: 60px;
 }
+
+
 #nav li {
 	display: inline;
 	margin-right: 0.5em;
@@ -76,34 +78,37 @@ div.section {
 
 
 h1 img {
-	width:10%;
+	
 	position:absolute
 	margin:30px;
 }
 
 #s01 img {	
-	width:100%;
+	
 	margin:0 auto;
+	width: 700px;
 }
 
 #s02 img {	
-	width:100%;
+	
 	margin:0 auto;
+	width: 700px;
 }
 
 #s03 img {	
-	width:100%;
+	
 	margin:0 auto;
+	width: 700px;
 }
 
 #s04 img {	
-	width:100%;
+	width:350px;
 	margin:0 auto;
 }
 
-#s05 img {	
-	width:100%;
+#s05 img {
 	margin:0 auto;
+	width: 700px;
 }
 
 
