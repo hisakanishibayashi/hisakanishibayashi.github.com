@@ -51,6 +51,8 @@ div.section {
 	margin-right: 20px;
 	color:#ccc;
 	width:auto;
+	font-size:8px;
+	font-weight:light;
 }
 #nav {	
 	list-style: none;
