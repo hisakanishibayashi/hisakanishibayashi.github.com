@@ -1,6 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
- Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<!DOCTYPE>
+<html>
 
 
 <head>
@@ -9,95 +8,72 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript" />
 <title>Hisaka Nishibayashi</title>
 <link rel="stylesheet" href="style1.css" type="text/css" media="screen" />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
-<script type="text/javascript">
-$(function() {
-	//width of contents
-	var cont = $('#contents');
-	var contW = $('.section').outerWidth(true) * $('div',cont ).length;
-	cont.css('width', contW);
-	//scrool speed
-	var speed = 50;
-	//vertical move with mousewheel
-	$('html').mousewheel(function(event, mov) {
-		//IE
-		$(this).scrollLeft($(this).scrollLeft() - mov * speed);
-		//webkit
-		$('body').scrollLeft($('body').scrollLeft() - mov * speed);
 
-		return false;	//no horizantal scrol
-    });
-	$('#nav a').click(function(event) {
-		var $anchor = $(this);
-		$('html, body').stop().animate({
-			scrollLeft: $($anchor.attr('href')).offset().left
-		}, 500);
-		event.preventDefault();
-	});
-});
+<script type="text/javascript">
 
 
 <!--
 
 num = 3; // number of images
-nme = "sample/images" // adress
-exp = "jpg" // 
+nme = "sample/images/img1/img" // adress
+exp = "jpg" // 拡張子
 cnt = 0;
 function changeImage() {
   cnt++;
   cnt %= num;
-  $("#img1").attr("src",nme + cnt + "." + exp);
+  document.img.src = nme + cnt + "." + exp;
 }
 
 
 num2 = 3; // number of images
-nme2 = "sample/images/sample" // adress
+nme2 = "sample/images/img2/img" // adress
 exp2 = "jpg" // 
 cnt2 = 0;
 function changeImage2() {
   cnt2++;
   cnt2 %= num2;
-  $("#img2").attr("src",nme2 + cnt2 + "." + exp2);
+  document.img2.src = nme2 + cnt2 + "." + exp2;
 }
 
 
 num3 = 2; // number of images
-nme3 = "sample/images/sample" // adress
+nme3 = "sample/images/img3/img" // adress
 exp3 = "jpg" // 
 cnt3 = 0;
-function changeImage2() {
+function changeImage3() {
   cnt3++;
   cnt3 %= num3;
-  $("#img3").attr("src",nme3 + cnt3 + "." + exp3);
+  document.img3.src = nme3 + cnt3 + "." + exp3;
 }
+
 
 
 num4 = 2; // number of images
-nme4 = "sample/images/sample" // adress
+nme4 = "sample/images/img4/img" // adress
 exp4 = "jpg" // 
 cnt4 = 0;
-function changeImage2() {
+function changeImage4() {
   cnt4++;
   cnt4 %= num4;
-  $("#img4").attr("src",nme + cnt + "." + exp);
+  document.img4.src = nme4 + cnt4 + "." + exp4;
 }
 
+
 num5 = 2; // number of images
-nme5 = "sample/images/sample" // adress
+nme5 = "sample/images/img5/img" // adress
 exp5 = "jpg" // 
 cnt5 = 0;
-function changeImage2() {
+function changeImage5() {
   cnt5++;
   cnt5 %= num5;
-  $("#img5").attr("src",nme + cnt + "." + exp);
+  document.img5.src = nme5 + cnt5 + "." + exp5;
 }
+
 
 
 //-->
-</SCRIPT>
+</script>
 
- <script type="text/javascript" language="JavaScript" src="/script/util.js"></script>
 
 
 </head>
@@ -117,15 +93,10 @@ function changeImage2() {
 	<div id="s01" class="section">
 		<h2>SECTION 01</h2>
 		<p>contents1</p>
-		<a href="javascript:changeImage('img1',
-                                           'sample/images/img0.jpg',
-                                           'sample/images/img1.jpg',
-                                           'sample/images/img2.jpg',);">
- <img name="img1" alt="click！" src="sample/images/img1.jpg" width=700 height=524>
+		<a href="JavaScript:changeImage()">
+ <img src="sample/images/img1/img0.jpg" name="img" alt="click！" width=700 height=524 />
  </a>
-<!--		<A href="JavaScript:changeImage()">
-		<IMG src="sample/images/img0.jpg" id="img1" border="0"></A>
--->
+
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
@@ -135,8 +106,8 @@ function changeImage2() {
 	<div id="s02" class="section">
 		<h2>SECTION 02</h2>
 		<p>contents2</p>
-		<A href="JavaScript:changeImage2()">
-		<img src="sample/images/img2.jpg" id="img2" alt="blah"></A>
+		<a href="JavaScript:changeImage2()">
+		<img src="sample/images/img2/img0.jpg" name="img2" alt="blah"></a>
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
@@ -146,8 +117,8 @@ function changeImage2() {
 	<div id="s03" class="section">
 		<h2>SECTION 03</h2>
 		<p>contents3</p>
-		<A href="JavaScript:changeImage3()">
-		<img src="sample/images/img4.jpg" id="img3" alt="blah"></A>
+		<a href="JavaScript:changeImage3()">
+		<img src="sample/images/img3/img0.jpg" name="img3" alt="blah"></a>
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
@@ -157,8 +128,8 @@ function changeImage2() {
 	<div id="s04" class="section">
 		<h2>SECTION 04</h2>
 		<p>contents4</p>
-		<A href="JavaScript:changeImage4()">
-		<img src="sample/images/img6.jpg" id="img4" alt="blah"></A>
+		<a href="JavaScript:changeImage4()">
+		<img src="sample/images/img4/img0.jpg" name="img4" alt="blah"></a>
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
@@ -168,8 +139,8 @@ function changeImage2() {
 	<div id="s05" class="section">
 		<h2>SECTION 05</h2>
 		<p>contents5</p>
-		<A href="JavaScript:changeImage5()">
-		<img src="sample/images/img8.jpg" id="img5" alt="blah"></A>
+		<a href="JavaScript:changeImage5()">
+		<img src="sample/images/img5/img0.jpg" id="img5" alt="blah"></a>
 		<h2>Project<h2>
 		<p>size:5X6feet<br>
 		material:paper,wood,wire</p>
